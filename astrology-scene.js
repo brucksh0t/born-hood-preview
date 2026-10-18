@@ -1,16 +1,16 @@
-﻿import { makeTitleCanvas } from './title-texture.js?v=mvdca7wb';
-import * as THREE from './vendor/three.module.js?v=mvdca7wb';
+import { makeTitleCanvas } from './title-texture.js?v=mvdcob32';
+import * as THREE from './vendor/three.module.js?v=mvdcob32';
 const vertex = `varying vec2 vUv; void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
 const fragment = `uniform sampler2D uMap;uniform float uOpacity;varying vec2 vUv;void main(){vec4 c=texture2D(uMap,vUv);gl_FragColor=vec4(c.rgb,c.a*uOpacity);` + '\n#include <colorspace_fragment>\n}';
 function randomSource(seed=7123){return()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};}
 export class AstrologyScene {
- constructor(canvas,{mode='film',onTitleReady=()=>{}}={}){
+ constructor(canvas,{mode='film',onTitleReady=()=>{},drawTitle=true}={}){
   this.canvas=canvas;this.mode=mode;this.progress=0;this.paused=false;this.reduced=false;this.visible=true;this.sign=0;this.rotation=0;this.lastFrame=0;
   try{this.renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'low-power'});}catch{canvas.dataset.webgl='fallback';return;}
   this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.setClearColor(0x000000,0);
   this.scene=new THREE.Scene();this.camera=new THREE.PerspectiveCamera(35,1,.1,100);this.camera.position.z=14;
   this.root=new THREE.Group();this.scene.add(this.root);this.makeStars();
-  if(mode==='film')this.makeTitle(onTitleReady);else this.makeOrbit();
+  if(mode==='film'){if(drawTitle)this.makeTitle(onTitleReady);}else this.makeOrbit();
   this.resizeObserver=new ResizeObserver(()=>this.resize());this.resizeObserver.observe(canvas.parentElement);
   this.visibilityObserver=new IntersectionObserver(entries=>{this.visible=entries[0].isIntersecting;this.wake();});this.visibilityObserver.observe(canvas);
   this.onVisibility=()=>this.wake();document.addEventListener('visibilitychange',this.onVisibility);

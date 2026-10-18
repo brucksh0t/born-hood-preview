@@ -1,4 +1,4 @@
-﻿import {getProduct,getVariant,variantKey,currency} from './catalog.js?v=mvdca7wb';
+﻿import {getProduct,getVariant,variantKey,currency} from './catalog.js?v=mvdcob32';
 const clampQuantity=value=>Math.max(1,Math.min(10,Math.floor(Number(value)||1)));
 function error(message,code,status=400){const failure=new Error(message);failure.code=code;failure.status=status;return failure;}
 export function normalizeBag(input){

@@ -642,32 +642,202 @@ export const previewCatalog = [
   {
     "id": "crown-227",
     "name": "Crown Premium Hoodie",
-    "type": "Premium Hoodie",
+    "type": "Unisex Premium Pullover Hoodie",
     "collection": "Crown",
     "collectionId": "crown",
     "collectionUrl": "shop.html?collection=crown",
     "category": "hoodies",
     "price": 30.99,
-    "image": "assets/products/catalog-crown-227.jpg",
+    "image": "assets/products/crown-premium-athletic-heather-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 227,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-clothing-crown?product=227",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "athletic-heather",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Relaxed unisex fit. Runs small; size up for best fit.",
+      "80% cotton / 20% polyester."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "athletic-heather",
+        "name": "Athletic Heather",
+        "hex": "#a4a4a4",
         "images": {
-          "front": "assets/products/catalog-crown-227.jpg",
-          "back": "assets/products/catalog-crown-227.jpg"
+          "front": "assets/products/crown-premium-athletic-heather-front.jpg",
+          "back": "assets/products/crown-premium-athletic-heather-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 32.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "red",
+        "name": "Red",
+        "hex": "#bf1927",
+        "images": {
+          "front": "assets/products/crown-premium-red-front.jpg",
+          "back": "assets/products/crown-premium-red-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 32.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "white",
+        "name": "White",
+        "hex": "#f5f5f5",
+        "images": {
+          "front": "assets/products/crown-premium-white-front.jpg",
+          "back": "assets/products/crown-premium-white-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 32.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "true-royal",
+        "name": "True Royal",
+        "hex": "#244db4",
+        "images": {
+          "front": "assets/products/crown-premium-true-royal-front.jpg",
+          "back": "assets/products/crown-premium-true-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 32.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
+        "images": {
+          "front": "assets/products/crown-premium-black-front.jpg",
+          "back": "assets/products/crown-premium-black-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 30.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 32.99,
+            "available": true
+          }
+        ]
       }
     ]
   },

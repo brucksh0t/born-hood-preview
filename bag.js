@@ -1,5 +1,5 @@
-﻿import {escapeHTML as e,amountMoney} from './catalog.js?v=mvdca7wb';
-import {addLine,normalizeBag,getBagSummary,setLineQuantity,replaceLine} from './bag-state.js?v=mvdca7wb';
+﻿import {escapeHTML as e,amountMoney} from './catalog.js?v=mvdcob32';
+import {addLine,normalizeBag,getBagSummary,setLineQuantity,replaceLine} from './bag-state.js?v=mvdcob32';
 const key='bornhood-bag-v2',legacyKey='bornhood-demo-bag-v1';
 export function readBag(){
  try{const saved=localStorage.getItem(key);return normalizeBag(JSON.parse(saved===null?(localStorage.getItem(legacyKey)||'[]'):saved));}catch{return [];}

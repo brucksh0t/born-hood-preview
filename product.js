@@ -1,6 +1,6 @@
-﻿import {bagUI} from './shell.js?v=mvdca7wb';
-import {addToBag,replaceBagLine,getSavedBagSummary} from './bag.js?v=mvdca7wb';
-import {catalog,money,getProduct,getVariant,isAvailable,escapeHTML as e,productCard} from './catalog.js?v=mvdca7wb';
+import {bagUI} from './shell.js?v=mvdcob32';
+import {addToBag,replaceBagLine,getSavedBagSummary} from './bag.js?v=mvdcob32';
+import {catalog,money,getProduct,getVariant,isAvailable,escapeHTML as e,productCard} from './catalog.js?v=mvdcob32';
 const $=selector=>document.querySelector(selector);
 const query=new URLSearchParams(location.search),product=getProduct(query.get('id'));
 if(!product){
@@ -76,11 +76,6 @@ if(!product){
   $('#add-label').textContent='Options coming soon';$('#add-bag').disabled=true;
  }
  document.querySelector('.related .text-link').href=product.collectionUrl;
- if(product.id==='crown-227'){
-  const study=document.createElement('section');study.className='product-motion-study';
-  study.innerHTML='<div><span class="eyebrow">Crown / Motion study</span><h2>A different angle.</h2><p>Campaign film. See the product photographs above for the listed garment artwork.</p></div><video controls muted playsinline preload="none" poster="assets/home/signature-poster.jpg" src="assets/home/signature-scrub.mp4" aria-label="Crown hoodie campaign rotation"></video>';
-  document.querySelector('.related').before(study);
- }
 
 }
 

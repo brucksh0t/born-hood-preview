@@ -1,14 +1,24 @@
-﻿import {catalog,productCard,isAvailable} from './catalog.js?v=mvdca7wb';
-import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdca7wb';
-import { AstrologyScene } from './astrology-scene.js?v=mvdca7wb';
-import { attachScrollVideo } from './scroll-video.js?v=mvdca7wb';
+import {catalog,productCard,isAvailable} from './catalog.js?v=mvdcob32';
+import {makeTitleCanvas} from './title-texture.js?v=mvdcob32';
+import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdcob32';
+import { AstrologyScene } from './astrology-scene.js?v=mvdcob32';
+import { attachScrollVideo } from './scroll-video.js?v=mvdcob32';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const $=selector=>document.querySelector(selector);
 const video=$('#celestial-film');
 $('#astrology-products').innerHTML=catalog.filter(product=>product.collection==='Astrology').sort((a,b)=>Number(isAvailable(b))-Number(isAvailable(a))).map(productCard).join('');
 const videoScrub=attachScrollVideo(video);
-const filmScene=new AstrologyScene($('#celestial-canvas'),{mode:'film',onTitleReady:()=>document.body.classList.add('has-chrome-title')});
+const filmScene=new AstrologyScene($('#celestial-canvas'),{mode:'film',drawTitle:false});
+const chromeImage=new Image();
+chromeImage.onload=()=>{
+ const heading=document.querySelector('.hero-copy h1');
+ try{
+  const canvas=makeTitleCanvas(chromeImage);canvas.className='chrome-title-art';canvas.setAttribute('aria-hidden','true');
+  heading.innerHTML='<span class="chrome-title-label">Astrology</span>';heading.append(canvas);heading.classList.add('chrome-ready');
+ }catch{/* Keep the readable text heading if the image cannot be processed. */}
+};
+chromeImage.src='assets/astrology/chrome-title.jpg';
 const orbitScene=new AstrologyScene($('#orbit-canvas'),{mode:'orbit'});
 const signs=[
  ['Aries','♈','Fire / The spark'],['Taurus','♉','Earth / The foundation'],['Gemini','♊','Air / The connection'],['Cancer','♋','Water / The feeling'],['Leo','♌','Fire / The presence'],['Virgo','♍','Earth / The detail'],['Libra','♎','Air / The balance'],['Scorpio','♏','Water / The depth'],['Sagittarius','♐','Fire / The journey'],['Capricorn','♑','Earth / The ambition'],['Aquarius','♒','Air / The vision'],['Pisces','♓','Water / The imagination'],
