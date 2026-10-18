@@ -1,4 +1,4 @@
-﻿import {catalog,productCard} from './catalog.js';
+import {catalog,productCard} from './catalog.js';
 import {readMotionPaused,saveMotionPaused} from './motion-preference.js';
 import { products, productById, sceneLayout } from './products.js';
 import { createStageController } from './stage-state.js';
@@ -18,7 +18,7 @@ document.addEventListener('pointermove', event => hoverIntent.track(event.client
 
 $('.product-selector').innerHTML = products.map(p => `<button class="product-button" type="button" data-select="${p.id}" aria-pressed="${p.id === 'hoodie'}"><span class="product-index">${p.number}</span><span>${p.short}</span></button>`).join('');
 $('.product-hotspots').innerHTML = products.map(p => `<button class="product-hotspot" type="button" data-select="${p.id}" aria-label="Bring ${p.name.toLowerCase()} to the front" aria-pressed="${p.id === 'hoodie'}"><span class="hotspot-marker" aria-hidden="true">+</span></button>`).join('');
-$('.collection-pieces').innerHTML = products.map(p => `<article class="piece reveal ${p.id === 'hoodie' ? 'is-active' : ''}" id="piece-${p.id}" data-piece="${p.id}"><a class="piece-image" href="#top" data-stage="${p.id}" aria-label="Explore ${p.name.toLowerCase()} on the interactive stage" style="--focus:${p.focus}"><img src="${p.poster}" alt="${p.name} in the foreground of the Born Hood subway scene" width="1920" height="1080" loading="lazy"></a><div class="piece-body"><p class="piece-label">${p.number} / ${p.role}</p><div class="piece-title-row"><h3>${p.name}</h3><button class="stage-link" type="button" data-stage="${p.id}">View on stage ${arrow}</button></div><p class="piece-tagline">${p.tagline}</p><a class="piece-shop-link" href="${p.shopHref}">${p.shopLabel} →</a><details><summary>About the piece<span aria-hidden="true">+</span></summary><p>${p.description} ${p.detail}</p></details></div></article>`).join('');
+$('.collection-pieces').innerHTML = ['signature-premium-hoodie','signature-crown-tee','signature-snapback','street-212','samurai-46','crown-227'].map(id=>catalog.find(p=>p.id===id)).filter(Boolean).map(productCard).join('');
 
 function updateMotionControl() {
   const button = $('.motion-toggle');

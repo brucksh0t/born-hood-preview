@@ -62,9 +62,9 @@ export class AstrologyScene {
   this.width=width;this.height=height;this.renderer.setSize(width,height,false);this.camera.aspect=width/height;this.camera.updateProjectionMatrix();
   const worldHeight=2*Math.tan(THREE.MathUtils.degToRad(17.5))*14;this.worldHeight=worldHeight;this.worldWidth=worldHeight*this.camera.aspect;
   if(this.title){
-   const mobile=width<560,scale=this.worldWidth*(mobile?.94:.54);
+   const mobile=width<560,scale=this.worldWidth*(mobile?.76:.38);
    this.title.scale.set(scale,scale*426/1280,1);
-   this.titleBase={x:mobile?0:-this.worldWidth*.195,y:mobile?-this.worldHeight*.035:this.worldHeight*.17};
+   this.titleBase={x:mobile?0:-this.worldWidth*.195,y:mobile?this.worldHeight*.045:this.worldHeight*.17};
   }
   if(this.orbit){const scale=width<560?Math.min(1,this.worldWidth/7.2):1;this.orbit.scale.setScalar(scale);this.orbit.position.y=width<560?.1:-.08;}
   this.render();
@@ -107,5 +107,6 @@ export class AstrologyScene {
   this.scene?.traverse(object=>{object.geometry?.dispose();if(object.material){const list=Array.isArray(object.material)?object.material:[object.material];list.forEach(m=>m.dispose());}});this.titleTexture?.dispose();this.renderer?.dispose();
  }
 }
+
 
 

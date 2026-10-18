@@ -1,5 +1,6 @@
-﻿import {catalogData} from './catalog-data.js';
-export const catalog=catalogData;
+import {catalogData} from './catalog-data.js';
+import {previewCatalog} from './catalog-preview.js';
+export const catalog=[...catalogData,...previewCatalog];
 export const currency='USD';
 export const money=value=>new Intl.NumberFormat('en-US',{style:'currency',currency}).format(value);
 export const amountMoney=amount=>money(amount/100);
@@ -14,6 +15,6 @@ export const isAvailable=product=>product.colors.some(color=>color.sizes.some(si
 export const escapeHTML=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 export function productCard(product){
  const e=escapeHTML,available=isAvailable(product),brand=product.collection==='Astrology'?'Born Hood Astrology':'Born Hood';
- return '<a class="product-card" href="product.html?id='+encodeURIComponent(product.id)+'"><div class="product-image"><img src="'+e(product.image)+'" alt="'+e(brand)+' '+e(product.name)+'" width="560" height="560" loading="lazy">'+(!available?'<span class="availability-tag">Currently unavailable</span>':'')+'<b>Explore piece →</b></div><div class="product-caption"><h3>'+e(product.name)+'</h3><span>'+money(product.price)+'</span></div><p>'+e(product.type)+'</p></a>';
+ return '<a class="product-card" href="product.html?id='+encodeURIComponent(product.id)+'"><div class="product-image"><img src="'+e(product.image)+'" alt="'+e(brand)+' '+e(product.name)+'" width="560" height="560" loading="lazy">'+(product.previewOnly?'<span class="availability-tag">Collection preview</span>':!available?'<span class="availability-tag">Currently unavailable</span>':'')+'<b>Explore piece →</b></div><div class="product-caption"><h3>'+e(product.name)+'</h3><span>'+money(product.price)+'</span></div><p>'+e(product.type)+'</p></a>';
 }
 

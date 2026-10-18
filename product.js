@@ -31,7 +31,7 @@ if(!product){
  }
  function updateSelection(){
   const variant=getVariant(product.id,selectedColor.id,selectedSize),availableSizes=selectedColor.sizes.filter(size=>size.available!==false);
-  const price=variant?.size.price??Math.min(...selectedColor.sizes.map(size=>size.price));
+  const price=variant?.size.price??(selectedColor.sizes.length?Math.min(...selectedColor.sizes.map(size=>size.price)):product.price);
   $('#product-price').textContent=(!selectedSize&&availableSizes.some(size=>size.price!==price)?'From ':'')+money(price);
   $('#selected-color').textContent=selectedColor.name;$('#selected-size').textContent=selectedSize||'Choose your fit';
   document.querySelectorAll('[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.color===selectedColor.id)));
@@ -62,7 +62,7 @@ if(!product){
  $('#add-bag').addEventListener('click',()=>{
   const selection={productId:product.id,colorId:selectedColor.id,size:selectedSize,quantity:normalizeQuantity()};
   try{
-   if(editKey){replaceBagLine(editKey,selection);editKey=getVariant(product.id,selectedColor.id,selectedSize).key;}
+   if(editKey){replaceBagLine(editKey,selection);editKey=getVariant(product.id,selectedColor.id,selectedSize).key;quantity.value=getSavedBagSummary().lines.find(line=>line.key===editKey).quantity;normalizeQuantity();}
    else addToBag(selection);
    $('#bag-status').textContent=product.name+', '+selectedColor.name+', '+selectedSize+' is in your bag.';bagUI.open();
   }catch(error){$('#bag-status').textContent=error.message;}
@@ -70,5 +70,18 @@ if(!product){
  const related=catalog.filter(other=>other.id!==product.id&&other.collection===product.collection).sort((a,b)=>Number(isAvailable(b))-Number(isAvailable(a))).slice(0,3);
  $('#related-products').innerHTML=related.map(productCard).join('');$('#related-products').dataset.count=related.length;
  updateSelection();showArtwork();
+ if(product.previewOnly){
+  document.querySelectorAll('.product-options,.quantity-row,.art-views').forEach(element=>element.hidden=true);
+  $('#availability-note').textContent='Collection preview. Size and color options are being prepared.';
+  $('#add-label').textContent='Options coming soon';$('#add-bag').disabled=true;
+ }
+ document.querySelector('.related .text-link').href=product.collectionUrl;
+ if(product.id==='crown-227'){
+  const study=document.createElement('section');study.className='product-motion-study';
+  study.innerHTML='<div><span class="eyebrow">Crown / Motion study</span><h2>A different angle.</h2><p>Campaign film. See the product photographs above for the listed garment artwork.</p></div><video controls muted playsinline preload="none" poster="assets/home/signature-poster.jpg" src="assets/home/signature-scrub.mp4" aria-label="Crown hoodie campaign rotation"></video>';
+  document.querySelector('.related').before(study);
+ }
+
 }
+
 
