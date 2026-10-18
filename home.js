@@ -1,4 +1,4 @@
-﻿import './shell.js?v=mvddawhp';
+﻿import './shell.js?v=mvddm2pw';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');

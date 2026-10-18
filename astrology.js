@@ -1,8 +1,8 @@
-import {catalog,productCard,isAvailable} from './catalog.js?v=mvddawhp';
-import {makeTitleCanvas} from './title-texture.js?v=mvddawhp';
-import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvddawhp';
-import { AstrologyScene } from './astrology-scene.js?v=mvddawhp';
-import { attachScrollVideo } from './scroll-video.js?v=mvddawhp';
+﻿import {catalog,productCard,isAvailable} from './catalog.js?v=mvddm2pw';
+import {makeTitleCanvas} from './title-texture.js?v=mvddm2pw';
+import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvddm2pw';
+import { AstrologyScene } from './astrology-scene.js?v=mvddm2pw';
+import { attachScrollVideo } from './scroll-video.js?v=mvddm2pw';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const $=selector=>document.querySelector(selector);
@@ -60,7 +60,7 @@ function setupMotion(){
  motionContext?.revert();triggers=[];
  document.body.classList.toggle('is-still',reduced.matches);
  filmScene.setReduced(reduced.matches);orbitScene.setReduced(reduced.matches);
- const button=$('.motion-control');button.disabled=reduced.matches;button.setAttribute('aria-label',reduced.matches?'Reduced motion enabled':paused?'Play motion':'Pause motion');
+ const button=$('.motion-control');button.disabled=reduced.matches;button.setAttribute('aria-pressed',String(paused||reduced.matches));button.setAttribute('aria-label',reduced.matches?'Reduced motion enabled':paused?'Play motion':'Pause motion');
  if(reduced.matches){narrative.progress(0);hero.inert=false;video.pause();filmScene.setProgress(0);return;}
  motionContext=gsap.context(()=>{
  triggers.push(ScrollTrigger.create({trigger:$('.film-runway'),start:'top top',end:'bottom bottom',onUpdate:self=>updateFilm(self.progress)}));
@@ -96,3 +96,4 @@ if(paused){const toggle=document.querySelector('.motion-control');toggle.setAttr
 
 
 document.fonts.ready.then(()=>ScrollTrigger.refresh());
+
