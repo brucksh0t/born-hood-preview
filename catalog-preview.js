@@ -1,33 +1,242 @@
-﻿export const previewCatalog = [
+export const previewCatalog = [
   {
     "id": "signature-345",
     "name": "Signature Classic Crewneck",
-    "type": "Classic Crewneck",
+    "type": "Unisex Classic Crewneck Sweatshirt",
     "collection": "Signature",
     "collectionId": "signature",
     "collectionUrl": "shop.html?collection=signature",
     "category": "sweatshirts",
     "price": 25.99,
-    "image": "assets/products/catalog-signature-345.jpg",
+    "image": "assets/products/signature-345-black-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 345,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-signature-logo?product=345",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "black",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Classic fit, unisex. Cotton-poly blend."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
         "images": {
-          "front": "assets/products/catalog-signature-345.jpg",
-          "back": "assets/products/catalog-signature-345.jpg"
+          "front": "assets/products/signature-345-black-front.jpg",
+          "back": "assets/products/signature-345-black-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "deep-royal",
+        "name": "Deep Royal",
+        "hex": "#234caa",
+        "images": {
+          "front": "assets/products/signature-345-deep-royal-front.jpg",
+          "back": "assets/products/signature-345-deep-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "light-steel",
+        "name": "Light Steel",
+        "hex": "#b5b5b5",
+        "images": {
+          "front": "assets/products/signature-345-light-steel-front.jpg",
+          "back": "assets/products/signature-345-light-steel-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 27.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "deep-forest",
+        "name": "Deep Forest",
+        "hex": "#1f4136",
+        "images": {
+          "front": "assets/products/signature-345-deep-forest-front.jpg",
+          "back": "assets/products/signature-345-deep-forest-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "navy",
+        "name": "Navy",
+        "hex": "#19243c",
+        "images": {
+          "front": "assets/products/signature-345-navy-front.jpg",
+          "back": "assets/products/signature-345-navy-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -40,26 +249,123 @@
     "collectionUrl": "shop.html?collection=signature",
     "category": "kids",
     "price": 18.99,
-    "image": "assets/products/catalog-signature-371.jpg",
+    "image": "assets/products/signature-371-black-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 371,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-signature-logo?product=371",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "black",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Classic fit, unisex. Runs small; size up for a looser fit. 100% cotton."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
         "images": {
-          "front": "assets/products/catalog-signature-371.jpg",
-          "back": "assets/products/catalog-signature-371.jpg"
+          "front": "assets/products/signature-371-black-front.jpg",
+          "back": "assets/products/signature-371-black-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "XS",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "deep-royal",
+        "name": "Deep Royal",
+        "hex": "#234caa",
+        "images": {
+          "front": "assets/products/signature-371-deep-royal-front.jpg",
+          "back": "assets/products/signature-371-deep-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "XS",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "true-pink",
+        "name": "True Pink",
+        "hex": "#e69bb6",
+        "images": {
+          "front": "assets/products/signature-371-true-pink-front.jpg",
+          "back": "assets/products/signature-371-true-pink-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "XS",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -72,26 +378,270 @@
     "collectionUrl": "shop.html?collection=signature",
     "category": "tees",
     "price": 18.99,
-    "image": "assets/products/catalog-signature-369.jpg",
+    "image": "assets/products/signature-369-black-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 369,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-signature-logo?product=369",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "black",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Slim unisex fit. Snug fit; size up for a looser fit. 100% cotton."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "new-navy",
+        "name": "New Navy",
+        "hex": "#1a263f",
         "images": {
-          "front": "assets/products/catalog-signature-369.jpg",
-          "back": "assets/products/catalog-signature-369.jpg"
+          "front": "assets/products/signature-369-new-navy-front.jpg",
+          "back": "assets/products/signature-369-new-navy-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 20.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "purple",
+        "name": "Purple",
+        "hex": "#5a386e",
+        "images": {
+          "front": "assets/products/signature-369-purple-front.jpg",
+          "back": "assets/products/signature-369-purple-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 20.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "classic-red",
+        "name": "Classic Red",
+        "hex": "#bc2636",
+        "images": {
+          "front": "assets/products/signature-369-classic-red-front.jpg",
+          "back": "assets/products/signature-369-classic-red-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 20.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "deep-royal",
+        "name": "Deep Royal",
+        "hex": "#234caa",
+        "images": {
+          "front": "assets/products/signature-369-deep-royal-front.jpg",
+          "back": "assets/products/signature-369-deep-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 20.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
+        "images": {
+          "front": "assets/products/signature-369-black-front.jpg",
+          "back": "assets/products/signature-369-black-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 18.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 20.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 20.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -104,58 +654,385 @@
     "collectionUrl": "shop.html?collection=signature",
     "category": "kids",
     "price": 17.99,
-    "image": "assets/products/catalog-signature-340.jpg",
+    "image": "assets/products/signature-340-black-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 340,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-signature-logo?product=340",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "black",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Classic unisex fit. 100% cotton."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "light-pink",
+        "name": "Light Pink",
+        "hex": "#e9c1d1",
         "images": {
-          "front": "assets/products/catalog-signature-340.jpg",
-          "back": "assets/products/catalog-signature-340.jpg"
+          "front": "assets/products/signature-340-light-pink-front.jpg",
+          "back": "assets/products/signature-340-light-pink-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "2T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "3T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "4T",
+            "price": 17.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "royal",
+        "name": "Royal",
+        "hex": "#244dae",
+        "images": {
+          "front": "assets/products/signature-340-royal-front.jpg",
+          "back": "assets/products/signature-340-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "2T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "3T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "4T",
+            "price": 17.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
+        "images": {
+          "front": "assets/products/signature-340-black-front.jpg",
+          "back": "assets/products/signature-340-black-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "2T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "3T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "4T",
+            "price": 17.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "navy",
+        "name": "Navy",
+        "hex": "#19243c",
+        "images": {
+          "front": "assets/products/signature-340-navy-front.jpg",
+          "back": "assets/products/signature-340-navy-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "2T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "3T",
+            "price": 17.99,
+            "available": true
+          },
+          {
+            "name": "4T",
+            "price": 17.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
   {
     "id": "signature-2224",
     "name": "Signature Tru Transfer Classic Tee",
-    "type": "Tru Transfer Classic Tee",
+    "type": "Tru Transfer Printed Classic Tee",
     "collection": "Signature",
     "collectionId": "signature",
     "collectionUrl": "shop.html?collection=signature",
     "category": "tees",
     "price": 24.99,
-    "image": "assets/products/catalog-signature-2224.jpg",
+    "image": "assets/products/signature-2224-red-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 2224,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-signature-logo?product=2224",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "red",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "100% cotton. Tru Transfer print technology."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "red",
+        "name": "Red",
+        "hex": "#bc2231",
         "images": {
-          "front": "assets/products/catalog-signature-2224.jpg",
-          "back": "assets/products/catalog-signature-2224.jpg"
+          "front": "assets/products/signature-2224-red-front.jpg",
+          "back": "assets/products/signature-2224-red-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 26.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 28.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 29.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "carolina-blue",
+        "name": "Carolina Blue",
+        "hex": "#78a9ce",
+        "images": {
+          "front": "assets/products/signature-2224-carolina-blue-front.jpg",
+          "back": "assets/products/signature-2224-carolina-blue-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 26.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 28.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 29.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "light-pink",
+        "name": "Light Pink",
+        "hex": "#e9c1d1",
+        "images": {
+          "front": "assets/products/signature-2224-light-pink-front.jpg",
+          "back": "assets/products/signature-2224-light-pink-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 26.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 28.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 29.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
+        "images": {
+          "front": "assets/products/signature-2224-black-front.jpg",
+          "back": "assets/products/signature-2224-black-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 26.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          },
+          {
+            "name": "4XL",
+            "price": 28.99,
+            "available": true
+          },
+          {
+            "name": "5XL",
+            "price": 29.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "electric-green",
+        "name": "Electric Green",
+        "hex": "#72ca36",
+        "images": {
+          "front": "assets/products/signature-2224-electric-green-front.jpg",
+          "back": "assets/products/signature-2224-electric-green-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 24.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 26.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 27.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -1183,4 +2060,3 @@
     ]
   }
 ];
-

@@ -1,5 +1,5 @@
-import {catalogData} from './catalog-data.js?v=mvddm2pw';
-import {previewCatalog} from './catalog-preview.js?v=mvddm2pw';
+import {catalogData} from './catalog-data.js?v=mvdrpcy7';
+import {previewCatalog} from './catalog-preview.js?v=mvdrpcy7';
 export const catalog=[...catalogData,...previewCatalog];
 export const currency='USD';
 export const money=value=>new Intl.NumberFormat('en-US',{style:'currency',currency}).format(value);

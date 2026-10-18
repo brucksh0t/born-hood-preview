@@ -1,8 +1,8 @@
-﻿import './shell.js?v=mvddm2pw';
-import {staticPreview} from './preview-config.js?v=mvddm2pw';
-import {buildQuote} from './bag-state.js?v=mvddm2pw';
-import {readBag,getSavedBagSummary} from './bag.js?v=mvddm2pw';
-import {escapeHTML as e,amountMoney} from './catalog.js?v=mvddm2pw';
+﻿import './shell.js?v=mvdrpcy7';
+import {staticPreview} from './preview-config.js?v=mvdrpcy7';
+import {buildQuote} from './bag-state.js?v=mvdrpcy7';
+import {readBag,getSavedBagSummary} from './bag.js?v=mvdrpcy7';
+import {escapeHTML as e,amountMoney} from './catalog.js?v=mvdrpcy7';
 let controller,version=0;
 async function render(){
  const current=++version;controller?.abort();controller=new AbortController();const requestController=controller;

@@ -1,4 +1,4 @@
-﻿import {catalog,productCard} from './catalog.js?v=mvddm2pw';
+﻿import {catalog,productCard} from './catalog.js?v=mvdrpcy7';
 const draftPreview=new URLSearchParams(location.search).get('studio')==='draft'&&['127.0.0.1','localhost'].includes(location.hostname);
 const publishedURL=new URL('./storefront-content.json',import.meta.url);publishedURL.search=new URL(import.meta.url).search;
 const contentURL=draftPreview?'/api/studio/content':publishedURL;
