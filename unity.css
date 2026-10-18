@@ -26,3 +26,6 @@ button,.button,.journey-header nav a,.journey-bag,.chapter-label,.eyebrow,.produ
 /* Resolve inherited 100% media heights before applying insets. */
 .film-media{width:auto;height:auto}.film-stage .hero-copy{width:35%;max-width:420px}.chrome-title-art{max-width:420px}
 @media(max-width:700px){.film-media{height:calc(100vw * 704 / 1248)}.film-stage .hero-copy{width:calc(100% - 44px);max-width:460px}.chrome-title-art{max-width:360px}}
+
+.home-page .section-heading>p,.portal-copy>p,.hero-description,.shop-heading>p{white-space:pre-line}
+.shop-heading p{white-space:pre-line}.draft-preview-notice{position:fixed;left:18px;bottom:18px;z-index:100;background:#21151a;border:1px solid #b83a50;color:#e8cbd2;display:flex;align-items:center;gap:24px;padding:12px 16px;font:11px/1.5 Arial,sans-serif;box-shadow:0 8px 25px #0008}.draft-preview-notice a{text-decoration:underline;white-space:nowrap}@media(max-width:560px){.draft-preview-notice{left:12px;right:12px;bottom:12px;gap:15px;font-size:10px;justify-content:space-between}}

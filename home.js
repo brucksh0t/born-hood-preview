@@ -1,4 +1,4 @@
-﻿import './shell.js?v=mvdcq06f';
+﻿import './shell.js?v=mvdd2elu';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
@@ -20,3 +20,5 @@ window.addEventListener('showdrop',()=>document.querySelector('#top').scrollInto
 reduced.addEventListener('change',setup);setup();
 document.fonts.ready.then(()=>ScrollTrigger.refresh());
 window.addEventListener('pagehide',event=>{if(!event.persisted)context?.revert();});
+
+window.addEventListener('storefront-content',setup);

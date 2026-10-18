@@ -1,4 +1,4 @@
-﻿import * as THREE from './vendor/three.module.js?v=mvdcq06f';
+﻿import * as THREE from './vendor/three.module.js?v=mvdd2elu';
 // Real scene geometry supplements the user's original photographs.
 // No depth map, fake product model, or regenerated artwork is used.
 export class HomeScene{

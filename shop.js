@@ -1,5 +1,5 @@
-﻿import './shell.js?v=mvdcq06f';
-import {catalog,productCard,isAvailable,escapeHTML as e} from './catalog.js?v=mvdcq06f';
+import './shell.js?v=mvdd2elu';
+import {catalog,productCard,isAvailable,escapeHTML as e} from './catalog.js?v=mvdd2elu';
 const query=new URLSearchParams(location.search),categories=['all',...new Set(catalog.map(product=>product.category))],collectionNames=new Map(catalog.map(product=>[product.collectionId,product.collection])),collections=['all',...collectionNames.keys()],sorts=['featured','price-asc','price-desc'];
 const categoryNames={all:'All pieces',hoodies:'Hoodies',tees:'Tees',headwear:'Headwear'};
 document.querySelector('.category-filter').innerHTML=categories.map(category=>'<button type="button" data-category="'+e(category)+'" aria-pressed="false">'+e(categoryNames[category]||category.replaceAll('-',' '))+'</button>').join('');
@@ -20,7 +20,7 @@ function render(){
  const grid=document.querySelector('#shop-products');grid.innerHTML=products.length?products.map(productCard).join(''):'<div class="shop-empty"><h2>A different orbit awaits.</h2><p>There are no pieces in this combination. Try another category or collection.</p><button type="button" id="reset-shop">Show all pieces →</button></div>';
  grid.querySelectorAll('.product-card').forEach((card,index)=>card.style.setProperty('--piece-delay',Math.min(index,6)*45+'ms'));
  document.querySelector('#reset-shop')?.addEventListener('click',()=>{category='all';collection.value='all';sort.value='featured';render();});
- const params=new URLSearchParams();if(category!=='all')params.set('category',category);if(collection.value!=='all')params.set('collection',collection.value);if(sort.value!=='featured')params.set('sort',sort.value);
+ const params=new URLSearchParams();if(query.get('studio')==='draft')params.set('studio','draft');if(category!=='all')params.set('category',category);if(collection.value!=='all')params.set('collection',collection.value);if(sort.value!=='featured')params.set('sort',sort.value);
  history.replaceState(null,'','shop.html'+(params.size?'?'+params:''));
 }
 document.querySelectorAll('[data-category]').forEach(button=>button.addEventListener('click',()=>{category=button.dataset.category;render();}));

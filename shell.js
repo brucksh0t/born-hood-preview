@@ -1,5 +1,5 @@
-﻿import {mountBag} from './bag.js?v=mvdcq06f';
-import {catalog,escapeHTML as e} from './catalog.js?v=mvdcq06f';
+﻿import {mountBag} from './bag.js?v=mvdd2elu';
+import {catalog,escapeHTML as e} from './catalog.js?v=mvdd2elu';
 const isHome=location.pathname==='/'||location.pathname.endsWith('/index.html');
 const isAstro=location.pathname.endsWith('/astrology.html');
 let shell=document.querySelector('#site-shell');
@@ -28,3 +28,5 @@ if(collectionMotion){document.body.append(collectionMotion);collectionMotion.cla
 const oldFooter=document.querySelector('.astro-footer');
 if(oldFooter){oldFooter.className='journey-footer';oldFooter.innerHTML='<a href="index.html" aria-label="Born Hood home"><img src="assets/store-logo.jpg" alt="Born Hood" width="1300" height="1300"></a><nav aria-label="Footer navigation"><a href="index.html#drop">The drop</a><a href="shop.html">Shop</a><a href="astrology.html">Astrology</a></nav><span>Born Hood / Independent expression</span><a href="index.html">Back to the drop ↑</a>';}
 
+
+import './site-content.js?v=mvdd2elu';
