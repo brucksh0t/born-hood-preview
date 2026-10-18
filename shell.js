@@ -1,4 +1,4 @@
-import {mountBag} from './bag.js';
+import {mountBag} from './bag.js?v=mvdca7wb';
 const isHome=location.pathname==='/'||location.pathname.endsWith('/index.html');
 const isAstro=location.pathname.endsWith('/astrology.html'),isShop=location.pathname.endsWith('/shop.html');
 let shell=document.querySelector('#site-shell');

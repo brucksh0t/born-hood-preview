@@ -1,7 +1,7 @@
-﻿import {catalog,productCard,isAvailable} from './catalog.js';
-import {readMotionPaused,saveMotionPaused} from './motion-preference.js';
-import { AstrologyScene } from './astrology-scene.js';
-import { attachScrollVideo } from './scroll-video.js';
+﻿import {catalog,productCard,isAvailable} from './catalog.js?v=mvdca7wb';
+import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdca7wb';
+import { AstrologyScene } from './astrology-scene.js?v=mvdca7wb';
+import { attachScrollVideo } from './scroll-video.js?v=mvdca7wb';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const $=selector=>document.querySelector(selector);

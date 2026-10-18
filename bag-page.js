@@ -1,6 +1,6 @@
-﻿import './shell.js';
-import {getSavedBagSummary,lineMarkup,handleBagAction} from './bag.js';
-import {amountMoney} from './catalog.js';
+﻿import './shell.js?v=mvdca7wb';
+import {getSavedBagSummary,lineMarkup,handleBagAction} from './bag.js?v=mvdca7wb';
+import {amountMoney} from './catalog.js?v=mvdca7wb';
 const root=document.querySelector('.commerce-main');
 function render(){
  const focused=document.activeElement,action=focused?.dataset?.bagAction,key=focused?.dataset?.lineKey;

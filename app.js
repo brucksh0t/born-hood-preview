@@ -1,9 +1,9 @@
-import {catalog,productCard} from './catalog.js';
-import {readMotionPaused,saveMotionPaused} from './motion-preference.js';
-import { products, productById, sceneLayout } from './products.js';
-import { createStageController } from './stage-state.js';
-import { VideoStage } from './video-stage.js';
-import { createHoverIntent } from './hover-intent.js';
+import {catalog,productCard} from './catalog.js?v=mvdca7wb';
+import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdca7wb';
+import { products, productById, sceneLayout } from './products.js?v=mvdca7wb';
+import { createStageController } from './stage-state.js?v=mvdca7wb';
+import { VideoStage } from './video-stage.js?v=mvdca7wb';
+import { createHoverIntent } from './hover-intent.js?v=mvdca7wb';
 
 document.documentElement.classList.add('js');
 const $ = selector => document.querySelector(selector);
