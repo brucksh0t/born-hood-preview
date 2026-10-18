@@ -1,5 +1,5 @@
-import { makeTitleCanvas } from './title-texture.js?v=mvdcob32';
-import * as THREE from './vendor/three.module.js?v=mvdcob32';
+import { makeTitleCanvas } from './title-texture.js?v=mvdcq06f';
+import * as THREE from './vendor/three.module.js?v=mvdcq06f';
 const vertex = `varying vec2 vUv; void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
 const fragment = `uniform sampler2D uMap;uniform float uOpacity;varying vec2 vUv;void main(){vec4 c=texture2D(uMap,vUv);gl_FragColor=vec4(c.rgb,c.a*uOpacity);` + '\n#include <colorspace_fragment>\n}';
 function randomSource(seed=7123){return()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};}

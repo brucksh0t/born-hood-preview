@@ -1,6 +1,6 @@
-import {bagUI} from './shell.js?v=mvdcob32';
-import {addToBag,replaceBagLine,getSavedBagSummary} from './bag.js?v=mvdcob32';
-import {catalog,money,getProduct,getVariant,isAvailable,escapeHTML as e,productCard} from './catalog.js?v=mvdcob32';
+import {bagUI} from './shell.js?v=mvdcq06f';
+import {addToBag,replaceBagLine,getSavedBagSummary} from './bag.js?v=mvdcq06f';
+import {catalog,money,getProduct,getVariant,isAvailable,escapeHTML as e,productCard} from './catalog.js?v=mvdcq06f';
 const $=selector=>document.querySelector(selector);
 const query=new URLSearchParams(location.search),product=getProduct(query.get('id'));
 if(!product){

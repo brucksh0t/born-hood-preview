@@ -1,8 +1,8 @@
-import {catalog,productCard,isAvailable} from './catalog.js?v=mvdcob32';
-import {makeTitleCanvas} from './title-texture.js?v=mvdcob32';
-import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdcob32';
-import { AstrologyScene } from './astrology-scene.js?v=mvdcob32';
-import { attachScrollVideo } from './scroll-video.js?v=mvdcob32';
+import {catalog,productCard,isAvailable} from './catalog.js?v=mvdcq06f';
+import {makeTitleCanvas} from './title-texture.js?v=mvdcq06f';
+import {readMotionPaused,saveMotionPaused} from './motion-preference.js?v=mvdcq06f';
+import { AstrologyScene } from './astrology-scene.js?v=mvdcq06f';
+import { attachScrollVideo } from './scroll-video.js?v=mvdcq06f';
 const {gsap,ScrollTrigger}=window;
 gsap.registerPlugin(ScrollTrigger);
 const $=selector=>document.querySelector(selector);

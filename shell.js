@@ -1,5 +1,5 @@
-﻿import {mountBag} from './bag.js?v=mvdcob32';
-import {catalog,escapeHTML as e} from './catalog.js?v=mvdcob32';
+﻿import {mountBag} from './bag.js?v=mvdcq06f';
+import {catalog,escapeHTML as e} from './catalog.js?v=mvdcq06f';
 const isHome=location.pathname==='/'||location.pathname.endsWith('/index.html');
 const isAstro=location.pathname.endsWith('/astrology.html');
 let shell=document.querySelector('#site-shell');
