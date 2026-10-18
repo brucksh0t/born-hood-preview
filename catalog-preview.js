@@ -1,4 +1,4 @@
-export const previewCatalog = [
+﻿export const previewCatalog = [
   {
     "id": "signature-345",
     "name": "Signature Classic Crewneck",
@@ -162,32 +162,186 @@ export const previewCatalog = [
   {
     "id": "samurai-46",
     "name": "Samurai Mastery Premium Ring-Spun Tee",
-    "type": "Premium Ring-Spun Tee",
+    "type": "Next Level 3600 | Premium Ring-Spun Cotton T-Shirt",
     "collection": "Samurai Mastery",
     "collectionId": "samurai",
     "collectionUrl": "shop.html?collection=samurai",
     "category": "tees",
     "price": 25.99,
-    "image": "assets/products/catalog-samurai-46.jpg",
+    "image": "assets/products/samurai-46-red-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 46,
     "sourceUrl": "https://bornhoodclothing.com/listing/born-hood-samurai-mastery-coll?product=46",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "red",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Slim unisex fit.",
+      "100% combed ringspun cotton. Heather Grey: 90% cotton, 10% polyester."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "red",
+        "name": "Red",
+        "hex": "#bb1b2a",
         "images": {
-          "front": "assets/products/catalog-samurai-46.jpg",
-          "back": "assets/products/catalog-samurai-46.jpg"
+          "front": "assets/products/samurai-46-red-front.jpg",
+          "back": "assets/products/samurai-46-red-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "tahiti-blue",
+        "name": "Tahiti Blue",
+        "hex": "#39b5c3",
+        "images": {
+          "front": "assets/products/samurai-46-tahiti-blue-front.jpg",
+          "back": "assets/products/samurai-46-tahiti-blue-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "heather-grey",
+        "name": "Heather Grey",
+        "hex": "#a5a5a5",
+        "images": {
+          "front": "assets/products/samurai-46-heather-grey-front.jpg",
+          "back": "assets/products/samurai-46-heather-grey-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "white",
+        "name": "White",
+        "hex": "#f5f5f5",
+        "images": {
+          "front": "assets/products/samurai-46-white-front.jpg",
+          "back": "assets/products/samurai-46-white-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 25.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 25.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -226,32 +380,187 @@ export const previewCatalog = [
   {
     "id": "street-212",
     "name": "Street Edition Classic Hoodie",
-    "type": "Classic Hoodie",
+    "type": "Unisex Classic Pullover Hoodie",
     "collection": "Street Edition",
     "collectionId": "street",
     "collectionUrl": "shop.html?collection=street",
     "category": "hoodies",
     "price": 31.99,
-    "image": "assets/products/catalog-street-212.jpg",
+    "image": "assets/products/street-212-black-front.jpg",
     "verifiedAt": "2026-10-18",
     "sourceProductId": 212,
     "sourceUrl": "https://bornhoodclothing.com/listing/we-are-bornhood-street-edition?product=212",
-    "previewOnly": true,
-    "defaultColor": "pictured",
+    "previewOnly": false,
+    "defaultColor": "black",
     "details": [
-      "Original product artwork and listed price from Born Hood Clothing.",
-      "Size and color options are being prepared for this preview."
+      "Cotton-poly blend with a brushed interior.",
+      "Double-lined hood, pouch pocket and ribbing with spandex.",
+      "Relaxed unisex fit. Runs small; size up for best fit."
     ],
     "colors": [
       {
-        "id": "pictured",
-        "name": "As pictured",
-        "hex": "#222222",
+        "id": "light-pink",
+        "name": "Light Pink",
+        "hex": "#e9c1d1",
         "images": {
-          "front": "assets/products/catalog-street-212.jpg",
-          "back": "assets/products/catalog-street-212.jpg"
+          "front": "assets/products/street-212-light-pink-front.jpg",
+          "back": "assets/products/street-212-light-pink-back.jpg"
         },
-        "sizes": []
+        "sizes": [
+          {
+            "name": "S",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 33.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 33.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "hex": "#151515",
+        "images": {
+          "front": "assets/products/street-212-black-front.jpg",
+          "back": "assets/products/street-212-black-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 33.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 33.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "royal",
+        "name": "Royal",
+        "hex": "#234eae",
+        "images": {
+          "front": "assets/products/street-212-royal-front.jpg",
+          "back": "assets/products/street-212-royal-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 33.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 33.99,
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "navy",
+        "name": "Navy",
+        "hex": "#17253e",
+        "images": {
+          "front": "assets/products/street-212-navy-front.jpg",
+          "back": "assets/products/street-212-navy-back.jpg"
+        },
+        "sizes": [
+          {
+            "name": "S",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "M",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "L",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "XL",
+            "price": 31.99,
+            "available": true
+          },
+          {
+            "name": "2XL",
+            "price": 33.99,
+            "available": true
+          },
+          {
+            "name": "3XL",
+            "price": 33.99,
+            "available": true
+          }
+        ]
       }
     ]
   },
@@ -874,3 +1183,4 @@ export const previewCatalog = [
     ]
   }
 ];
+

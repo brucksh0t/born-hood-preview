@@ -1,5 +1,5 @@
-import './shell.js?v=mvdd2elu';
-import {catalog,productCard,isAvailable,escapeHTML as e} from './catalog.js?v=mvdd2elu';
+import './shell.js?v=mvddawhp';
+import {catalog,productCard,isAvailable,escapeHTML as e} from './catalog.js?v=mvddawhp';
 const query=new URLSearchParams(location.search),categories=['all',...new Set(catalog.map(product=>product.category))],collectionNames=new Map(catalog.map(product=>[product.collectionId,product.collection])),collections=['all',...collectionNames.keys()],sorts=['featured','price-asc','price-desc'];
 const categoryNames={all:'All pieces',hoodies:'Hoodies',tees:'Tees',headwear:'Headwear'};
 document.querySelector('.category-filter').innerHTML=categories.map(category=>'<button type="button" data-category="'+e(category)+'" aria-pressed="false">'+e(categoryNames[category]||category.replaceAll('-',' '))+'</button>').join('');

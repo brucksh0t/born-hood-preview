@@ -1,5 +1,5 @@
-﻿import { waitForPlaybackEnd } from './media-events.js?v=mvdd2elu';
-import { productById, transitionSource } from './products.js?v=mvdd2elu';
+﻿import { waitForPlaybackEnd } from './media-events.js?v=mvddawhp';
+import { productById, transitionSource } from './products.js?v=mvddawhp';
 
 function waitForMedia(video, eventName, signal, timeout = 8000) {
   return new Promise((resolve, reject) => {
